@@ -1,0 +1,9 @@
+SELECT s.StudentGroup, s.firstName, s.lastName, sch.SchoolName, s.Teacher, 
+s.ClassPeriod, s.Sex, s.GPA, e.EducationLevel, o.Occupation, s.Children, 
+s.ChildrenNumber, s.CreditCard, s.CreditScore, s.Salary, m.MaritalStatus,  s.marriedTo,
+s.NetMonthlyIncome, s.StudentLoans, s.childSupport
+FROM student s, schools sch, occupation o, education e, credit c, MaritalStatus m
+WHERE c.creditId = s.creditUseId AND e.EducationId = s.EducationId AND 
+o.Id = s.occupationId AND sch.SchoolId = s.schoolId AND 
+m.Id = s.MaritalStatusId AND s.StudentGroup = '{?studentgroup}'
+ORDER BY s.lastName

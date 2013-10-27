@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections></configSections>
+  <connectionStrings>
+    <add name="CISApp.Properties.Settings.testDbConnectionString"
+      connectionString="Data Source=|DataDirectory|\testDb.sdf" providerName="Microsoft.SqlServerCe.Client.3.5" />
+    <add name="CISApp.Properties.Settings.ConnectionString" connectionString="Data Source=localhost\myinstance;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+    <add name="CISApp.Properties.Settings.testdbConnectionString1"
+      connectionString="Data Source=localhost\myinstance;Initial Catalog=testdb;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+    <add name="CISApp.Properties.Settings.CISConnectionString" connectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\CIS.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True"
+      providerName="System.Data.SqlClient" />
+    <add name="CISApp.Properties.Settings.CISConnectionString1" connectionString="Data Source=localhost\myinstance;Initial Catalog=CIS;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+    <add name="CISApp.Properties.Settings.CISdbConnectionString"
+      connectionString="data source=C:\Users\keith.sullivan\Documents\CIS\CISApp\CISApp\CISdb"
+      providerName="System.Data.SQLite" />
+  </connectionStrings>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>
